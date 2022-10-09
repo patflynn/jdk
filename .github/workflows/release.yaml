@@ -53,6 +53,7 @@ jobs:
         base-tag: ghcr.io/${{ github.repository }}
         keyring-append: /github/workspace/melange.rsa.pub
         archs: x86_64
+        sbom-formats: CycloneDX,SPDX
 
     - name: Emit Image Refs output
       id: emit-refs
